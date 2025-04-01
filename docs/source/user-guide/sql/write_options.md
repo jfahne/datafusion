@@ -37,12 +37,12 @@ If inserting to an external table, table specific write options can be specified
 CREATE EXTERNAL TABLE
   my_table(a bigint, b bigint)
   STORED AS csv
-  COMPRESSION TYPE gzip
   LOCATION '/test/location/my_csv_table/'
   OPTIONS(
-    NULL_VALUE 'NAN',
-    'has_header' 'true',
-    'format.delimiter' ';'
+    'format.null_value' 'NAN',
+    'format.has_header' 'true',
+    'format.delimiter' ';',
+    'format.compression' 'gzip'
   )
 ```
 
@@ -92,16 +92,24 @@ The following options are available when writing JSON files. Note: If any unsupp
 
 The following options are available when writing CSV files. Note: if any unsupported options is specified an error will be raised and the query will fail.
 
-| Option          | Description                                                                                                                       | Default Value    |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| COMPRESSION     | Sets the compression that should be applied to the entire CSV file. Supported values are GZIP, BZIP2, XZ, ZSTD, and UNCOMPRESSED. | UNCOMPRESSED     |
-| HEADER          | Sets if the CSV file should include column headers                                                                                | false            |
-| DATE_FORMAT     | Sets the format that dates should be encoded in within the CSV file                                                               | arrow-rs default |
-| DATETIME_FORMAT | Sets the format that datetimes should be encoded in within the CSV file                                                           | arrow-rs default |
-| TIME_FORMAT     | Sets the format that times should be encoded in within the CSV file                                                               | arrow-rs default |
-| RFC3339         | If true, uses RFC339 format for date and time encodings                                                                           | arrow-rs default |
-| NULL_VALUE      | Sets the string which should be used to indicate null values within the CSV file.                                                 | arrow-rs default |
-| DELIMITER       | Sets the character which should be used as the column delimiter within the CSV file.                                              | arrow-rs default |
+| Option                | Description                                                                                                                       | Default Value              |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| HAS_HEADER            | Sets if the CSV file should include column headers                                                                                | false                      |
+| DELIMITER             | Sets the character which should be used as the column delimiter within the CSV file.                                              | ,                          |
+| QUOTE                 | Sets the character which should be used to quote text within the CSV file.                                                        | "                          |
+| TERMINATOR            | Sets the character which should be used as the record delimiter within the CSV file.                                              | CRLF                       |
+| ESCAPE                | Sets the character which should be used when escaping text within the CSV file.                                                   | None                       |
+| NEWLINE_IN_VALUES     | Sets if the CSV file should have new line characters in quoted values.                                                            | Datafusion Catalog Setting |
+| COMPRESSION           | Sets the compression that should be applied to the entire CSV file. Supported values are GZIP, BZIP2, XZ, ZSTD, and UNCOMPRESSED. | UNCOMPRESSED               |
+| SCHEMA_INFER_MAX_REC  | Sets the limit for the number of records to scan to infer the CSV file's schema.                                                  | 1000                       |
+| DATE_FORMAT           | Sets the format that dates should be encoded in within the CSV file                                                               | arrow-rs default           |
+| DATETIME_FORMAT       | Sets the format that datetimes should be encoded in within the CSV file                                                           | arrow-rs default           |
+| TIMESTAMP_FORMAT      | Sets the format that timestamps should be encoded in within the CSV file.                                                         | arrow-rs default           |
+| TIMESTAMP_TZ_FORMAT   | Sets the format that timestamps with timezone offsets should be encoded in within the CSV file.                                   | arrow-rs default           |
+| TIME_FORMAT           | Sets the format that times should be encoded in within the CSV file                                                               | arrow-rs default           |
+| NULL_VALUE            | Sets the string which should be used to indicate null values within the CSV file.                                                 | arrow-rs default           |
+| NULL_REGEX            | Sets the regex which should be used to determine null values within the CSV file.                                                 | arrow-rs default           |
+
 
 ### Parquet Format Specific Options
 
