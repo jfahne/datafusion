@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>API health policy &#8212; Apache DataFusion  documentation</title>
+    <title>Runtime Environment Configurations &#8212; Apache DataFusion  documentation</title>
     
     <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -33,8 +33,8 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="HOWTOs" href="howtos.html" />
-    <link rel="prev" title="Testing" href="testing.html" />
+    <link rel="next" title="Reading Explain Plans" href="explain-usage.html" />
+    <link rel="prev" title="Configuration Settings" href="configs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -139,34 +139,34 @@
   User Guide
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/introduction.html">
+  <a class="reference internal" href="introduction.html">
    Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/example-usage.html">
+  <a class="reference internal" href="example-usage.html">
    Example Usage
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/features.html">
+  <a class="reference internal" href="features.html">
    Features
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/concepts-readings-events.html">
+  <a class="reference internal" href="concepts-readings-events.html">
    Concepts, Readings, Events
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/crate-configuration.html">
+  <a class="reference internal" href="crate-configuration.html">
    Crate Configuration
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../user-guide/cli/index.html">
+  <a class="reference internal" href="cli/index.html">
    DataFusion CLI
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -176,39 +176,39 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/cli/overview.html">
+    <a class="reference internal" href="cli/overview.html">
      Overview
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/cli/installation.html">
+    <a class="reference internal" href="cli/installation.html">
      Installation
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/cli/usage.html">
+    <a class="reference internal" href="cli/usage.html">
      Usage
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/cli/datasources.html">
+    <a class="reference internal" href="cli/datasources.html">
      Local Files / Directories
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/dataframe.html">
+  <a class="reference internal" href="dataframe.html">
    DataFrame API
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/expressions.html">
+  <a class="reference internal" href="expressions.html">
    Expression API
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../user-guide/sql/index.html">
+  <a class="reference internal" href="sql/index.html">
    SQL Reference
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -218,94 +218,94 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/data_types.html">
+    <a class="reference internal" href="sql/data_types.html">
      Data Types
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/select.html">
+    <a class="reference internal" href="sql/select.html">
      SELECT syntax
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/subqueries.html">
+    <a class="reference internal" href="sql/subqueries.html">
      Subqueries
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/ddl.html">
+    <a class="reference internal" href="sql/ddl.html">
      DDL
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/dml.html">
+    <a class="reference internal" href="sql/dml.html">
      DML
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/explain.html">
+    <a class="reference internal" href="sql/explain.html">
      EXPLAIN
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/information_schema.html">
+    <a class="reference internal" href="sql/information_schema.html">
      Information Schema
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/operators.html">
+    <a class="reference internal" href="sql/operators.html">
      Operators and Literals
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/aggregate_functions.html">
+    <a class="reference internal" href="sql/aggregate_functions.html">
      Aggregate Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/window_functions.html">
+    <a class="reference internal" href="sql/window_functions.html">
      Window Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/scalar_functions.html">
+    <a class="reference internal" href="sql/scalar_functions.html">
      Scalar Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/special_functions.html">
+    <a class="reference internal" href="sql/special_functions.html">
      Special Functions
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/format_options.html">
+    <a class="reference internal" href="sql/format_options.html">
      Format Options
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/prepared_statements.html">
+    <a class="reference internal" href="sql/prepared_statements.html">
      Prepared Statements
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/configs.html">
+  <a class="reference internal" href="configs.html">
    Configuration Settings
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/runtime_configs.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Runtime Environment Configurations
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/explain-usage.html">
+  <a class="reference internal" href="explain-usage.html">
    Reading Explain Plans
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../user-guide/faq.html">
+  <a class="reference internal" href="faq.html">
    Frequently Asked Questions
   </a>
  </li>
@@ -393,59 +393,59 @@
   Contributor Guide
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
+  <a class="reference internal" href="../contributor-guide/index.html">
    Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="communication.html">
+  <a class="reference internal" href="../contributor-guide/communication.html">
    Communication
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="development_environment.html">
+  <a class="reference internal" href="../contributor-guide/development_environment.html">
    Development Environment
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="architecture.html">
+  <a class="reference internal" href="../contributor-guide/architecture.html">
    Architecture
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="testing.html">
+  <a class="reference internal" href="../contributor-guide/testing.html">
    Testing
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributor-guide/api-health.html">
    API health policy
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="howtos.html">
+  <a class="reference internal" href="../contributor-guide/howtos.html">
    HOWTOs
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="roadmap.html">
+  <a class="reference internal" href="../contributor-guide/roadmap.html">
    Roadmap
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="governance.html">
+  <a class="reference internal" href="../contributor-guide/governance.html">
    Governance
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="inviting.html">
+  <a class="reference internal" href="../contributor-guide/inviting.html">
    Inviting New Committers and PMC Members
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="specification/index.html">
+  <a class="reference internal" href="../contributor-guide/specification/index.html">
    Specifications
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -455,24 +455,24 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="specification/invariants.html">
+    <a class="reference internal" href="../contributor-guide/specification/invariants.html">
      Invariants
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="specification/output-field-name-semantic.html">
+    <a class="reference internal" href="../contributor-guide/specification/output-field-name-semantic.html">
      Output field name semantics
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="gsoc_application_guidelines.html">
+  <a class="reference internal" href="../contributor-guide/gsoc_application_guidelines.html">
    GSoC Application Guidelines
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="gsoc_project_ideas.html">
+  <a class="reference internal" href="../contributor-guide/gsoc_project_ideas.html">
    GSoC Project Ideas
   </a>
  </li>
@@ -521,29 +521,9 @@
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#upgrade-guides">
-   Upgrade Guides
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#breaking-changes">
-   Breaking Changes
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#deprecation-guidelines">
-   Deprecation Guidelines
-  </a>
- </li>
-</ul>
-
+    
 </nav>
               </div>
               
@@ -551,7 +531,7 @@
                 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/apache/arrow-datafusion/edit/main/docs/source/contributor-guide/api-health.md">
+    <a href="https://github.com/apache/arrow-datafusion/edit/main/docs/source/user-guide/runtime_configs.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -588,52 +568,33 @@
   specific language governing permissions and limitations
   under the License.
 -->
-<section id="api-health-policy">
-<h1>API health policy<a class="headerlink" href="#api-health-policy" title="Link to this heading">¶</a></h1>
-<p>DataFusion is used extensively as a library and has a large public API, thus it
-is important that the API is well maintained. In general, we try to minimize
-breaking API changes, but they are sometimes necessary.</p>
-<p>When possible, rather than making breaking API changes, we prefer to deprecate
-APIs to give users time to adjust to the changes.</p>
-<section id="upgrade-guides">
-<h2>Upgrade Guides<a class="headerlink" href="#upgrade-guides" title="Link to this heading">¶</a></h2>
-<p>When making changes that require DataFusion users to make changes to their code
-as part of an upgrade please consider adding documentation to the version
-specific <a class="reference internal" href="../library-user-guide/upgrading.html"><span class="std std-doc">Upgrade Guide</span></a></p>
-</section>
-<section id="breaking-changes">
-<h2>Breaking Changes<a class="headerlink" href="#breaking-changes" title="Link to this heading">¶</a></h2>
-<p>In general, a function is part of the public API if it appears on the <a class="reference external" href="https://docs.rs/datafusion/latest/datafusion/index.html">docs.rs page</a></p>
-<p>Breaking public API changes are those that <em>require</em> users to change their code
-for it to compile and execute, and are listed as “Major Changes” in the <a class="reference external" href="https://doc.rust-lang.org/cargo/reference/semver.html#change-categories">SemVer
-Compatibility Section of the cargo book</a>. Common examples of breaking changes:</p>
-<ul class="simple">
-<li><p>Adding new required parameters to a function (<code class="docutils literal notranslate"><span class="pre">foo(a:</span> <span class="pre">i32,</span> <span class="pre">b:</span> <span class="pre">i32)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">foo(a:</span> <span class="pre">i32,</span> <span class="pre">b:</span> <span class="pre">i32,</span> <span class="pre">c:</span> <span class="pre">i32)</span></code>)</p></li>
-<li><p>Removing a <code class="docutils literal notranslate"><span class="pre">pub</span></code> function</p></li>
-<li><p>Changing the return type of a function</p></li>
-</ul>
-<p>When making breaking public API changes, please add the <code class="docutils literal notranslate"><span class="pre">api-change</span></code> label to
-the PR so we can highlight the changes in the release notes.</p>
-</section>
-<section id="deprecation-guidelines">
-<h2>Deprecation Guidelines<a class="headerlink" href="#deprecation-guidelines" title="Link to this heading">¶</a></h2>
-<p>When deprecating a method:</p>
-<ul class="simple">
-<li><p>Mark the API as deprecated using <code class="docutils literal notranslate"><span class="pre">#[deprecated]</span></code> and specify the exact DataFusion version in which it was deprecated</p></li>
-<li><p>Concisely describe the preferred API to help the user transition</p></li>
-</ul>
-<p>The deprecated version is the next version which contains the deprecation. For
-example, if the current version listed in <a class="reference external" href="https://github.com/apache/datafusion/blob/main/Cargo.toml"><code class="docutils literal notranslate"><span class="pre">Cargo.toml</span></code></a> is <code class="docutils literal notranslate"><span class="pre">43.0.0</span></code> then the next
-version will be <code class="docutils literal notranslate"><span class="pre">44.0.0</span></code>.</p>
-<p>To mark the API as deprecated, use the <code class="docutils literal notranslate"><span class="pre">#[deprecated(since</span> <span class="pre">=</span> <span class="pre">&quot;...&quot;,</span> <span class="pre">note</span> <span class="pre">=</span> <span class="pre">&quot;...&quot;)]</span></code> attribute.</p>
-<p>For example:</p>
-<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="cp">#[deprecated(since = </span><span class="s">&quot;41.0.0&quot;</span><span class="cp">, note = </span><span class="s">&quot;Use new API instead&quot;</span><span class="cp">)]</span>
-<span class="k">pub</span><span class="w"> </span><span class="k">fn</span><span class="w"> </span><span class="nf">api_to_deprecated</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="kt">usize</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="kt">usize</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<!---
+This file was generated by the dev/update_runtime_config_docs.sh script.
+Do not edit it manually as changes will be overwritten.
+Instead, edit dev/update_runtime_config_docs.sh or the docstrings in datafusion/execution/src/runtime_env.rs.
+-->
+<section id="runtime-environment-configurations">
+<h1>Runtime Environment Configurations<a class="headerlink" href="#runtime-environment-configurations" title="Link to this heading">¶</a></h1>
+<p>DataFusion runtime configurations can be set via SQL using the <code class="docutils literal notranslate"><span class="pre">SET</span></code> command.</p>
+<p>For example, to configure <code class="docutils literal notranslate"><span class="pre">datafusion.runtime.memory_limit</span></code>:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SET</span><span class="w"> </span><span class="n">datafusion</span><span class="p">.</span><span class="n">runtime</span><span class="p">.</span><span class="n">memory_limit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2G&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>Deprecated methods will remain in the codebase for a period of 6 major versions or 6 months, whichever is longer, to provide users ample time to transition away from them.</p>
-<p>Please refer to <a class="reference external" href="https://crates.io/crates/datafusion/versions">DataFusion releases</a> to plan ahead API migration</p>
-</section>
+<p>The following runtime configuration settings are available:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>key</p></th>
+<th class="head"><p>default</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>datafusion.runtime.memory_limit</p></td>
+<td><p>NULL</p></td>
+<td><p>Maximum memory limit for query execution. Supports suffixes K (kilobytes), M (megabytes), and G (gigabytes). Example: ‘2G’ for 2 gigabytes.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 
 
@@ -642,17 +603,17 @@ version will be <code class="docutils literal notranslate"><span class="pre">44.
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="testing.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="configs.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Testing</p>
+            <p class="prev-next-title">Configuration Settings</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="howtos.html" title="next page">
+    <a class='right-next' id="next-link" href="explain-usage.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">HOWTOs</p>
+        <p class="prev-next-title">Reading Explain Plans</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -278,8 +278,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../user-guide/sql/write_options.html">
-     Write Options
+    <a class="reference internal" href="../user-guide/sql/format_options.html">
+     Format Options
     </a>
    </li>
    <li class="toctree-l2">
@@ -292,6 +292,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../user-guide/configs.html">
    Configuration Settings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../user-guide/runtime_configs.html">
+   Runtime Environment Configurations
   </a>
  </li>
  <li class="toctree-l1">
@@ -802,7 +807,7 @@ displayed the same as <code class="docutils literal notranslate"><span class="pr
 </div>
 <p>Looking at the <code class="docutils literal notranslate"><span class="pre">EXPLAIN</span></code> output we can see that the optimizer has effectively rewritten <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span></code> into effectively
 <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">as</span> <span class="pre">&quot;1</span> <span class="pre">+</span> <span class="pre">2&quot;</span></code>:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; explain select 1 + 2;
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; explain format indent select 1 + 2;
 +---------------+-------------------------------------------------+
 | plan_type     | plan                                            |
 +---------------+-------------------------------------------------+
